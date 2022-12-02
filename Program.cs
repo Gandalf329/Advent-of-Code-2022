@@ -13,6 +13,6 @@ internal class Program
 
         Console.WriteLine("Advent of code 2022!");
         Console.WriteLine($"Day 1. Result 1: {day1.Result1()} \t Result 2: {day1.Result2()}");
-        Console.WriteLine($"Day 2. Result 1: {day2.Result1()} \t Result 2: {day1.Result2()}");
+        Console.WriteLine($"Day 2. Result 1: {day2.Result1()} \t Result 2: {day2.Result2()}");
     }
 }
