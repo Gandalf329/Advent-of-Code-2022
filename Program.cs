@@ -10,12 +10,14 @@ internal class Program
         var day3 = new _03_Rucksack_Reorganization();
         var day4 = new _04_Camp_Cleanup();
         var day5 = new _05_Supply_Stacks();
+        var day6 = new _06_Tuning_Trouble();
 
         day1.GetData();
         day2.GetData();
         day3.GetData();
         day4.GetData();
         day5.GetData();
+        day6.GetData();
 
         Console.WriteLine("Advent of code 2022!");
         Console.WriteLine($"Day 1. Result 1: {day1.Result1()} \t Result 2: {day1.Result2()}");
@@ -23,5 +25,6 @@ internal class Program
         Console.WriteLine($"Day 3. Result 1: {day3.Result1()} \t Result 2: {day3.Result2()}");
         Console.WriteLine($"Day 4. Result 1: {day4.Result1()} \t Result 2: {day4.Result2()}");
         Console.WriteLine($"Day 5. Result 1: {day5.Result1()} \t Result 2: {day5.Result2()}");
+        Console.WriteLine($"Day 6. Result 1: {day6.Result1()} \t Result 2: {day6.Result2()}");
     }
 }
