@@ -14,8 +14,7 @@ internal class _06_Tuning_Trouble
     {
         using (StreamReader sr = new StreamReader(path))
         {
-            data = sr.ReadToEnd();
-            
+            data = sr.ReadToEnd();      
         }
     }
     public bool CheckString(List<char> word)
