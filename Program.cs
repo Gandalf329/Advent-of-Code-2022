@@ -12,6 +12,7 @@ internal class Program
         var day5 = new _05_Supply_Stacks();
         var day6 = new _06_Tuning_Trouble();
         var day7 = new _07_No_Space_Left_On_Device();
+        var day8 = new _08_Treetop_Tree_House();
 
         day1.GetData();
         day2.GetData();
@@ -20,6 +21,7 @@ internal class Program
         day5.GetData();
         day6.GetData();
         day7.GetData();
+        day8.GetData();
 
         Console.WriteLine("Advent of code 2022!");
         Console.WriteLine($"Day 1. Result 1: {day1.Result1()} \t Result 2: {day1.Result2()}");
@@ -29,5 +31,6 @@ internal class Program
         Console.WriteLine($"Day 5. Result 1: {day5.Result1()} \t Result 2: {day5.Result2()}");
         Console.WriteLine($"Day 6. Result 1: {day6.Result1()} \t Result 2: {day6.Result2()}");
         Console.WriteLine($"Day 7. Result 1: {day7.Result1()} \t Result 2: {day7.Result2()}");
+        Console.WriteLine($"Day 8. Result 1: {day8.Result1()} \t Result 2: {day8.Result2()}");
     }
 }
