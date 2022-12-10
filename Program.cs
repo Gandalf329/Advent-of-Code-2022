@@ -39,6 +39,5 @@ internal class Program
         Console.WriteLine($"Day 9. Result 1: {day9.Result1()} \t Result 2(not working): {day9.Result2()}");
         Console.WriteLine($"Day 10. Result 1: {day10.Result1()} \nDay10. Result 2: RKPJBPLA \n");
         day10.Result2();
-
     }
 }
