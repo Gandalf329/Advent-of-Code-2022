@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 namespace Advent_of_Code_2022.Days;
 internal class _09_Rope_Bridge
 {
-    string path = "D:\\progVis\\Advent-of-Code-2022\\input\\9day_input.txt";
+    string path = "D:\\progVis\\Advent-of-Code-2022\\input\\9day_test.txt";
     List<string> data = new List<string>();
     public void GetData()
     {
@@ -145,5 +145,106 @@ internal class _09_Rope_Bridge
         result = positions.Distinct().ToList();
         return result.Count;
     }
+    /// <summary>
+    /// Result2 not working
+    /// </summary>
+    public int Result2()
+    {
+        //int result = 0;
+        int c = 10;
+        List<int> head = new List<int>() { 0, 0 };//row col
+        List<int> tail = new List<int>() { 0, 0 };
+        List<List<int>> positions = new List<List<int>>();
+        List<List<int>> result = new List<List<int>>();
+        positions.Add(new List<int>() { tail[0], tail[1] });
+        Queue<List<int>> last = new Queue<List<int>>();
+        foreach (string item in data)
+        {
+            var move = item.Split(" ");
+            int num = int.Parse(move[1]);
 
+            for (int i = 0; i < num; i++)
+            {
+                switch (move[0])
+                {
+                    case "R":
+
+                            last.Enqueue(new List<int>() { head[0], head[1] });
+
+                            
+
+                        head[1] += 1;
+                        if (Check(tail[0], tail[1], head[0], head[1], c))
+                        {
+                            tail[0] = last.Peek()[0];
+                            tail[1] = last.Peek()[1];
+                            if (CheckItem(positions, tail))
+                            {
+                                positions.Add(new List<int>() { tail[0], tail[1] });
+                                last.Dequeue();
+                            }
+
+                        }
+                        break;
+                    case "L":
+
+                        last.Enqueue(new List<int>() { head[0], head[1] });
+
+
+                        head[1] -= 1;
+                        if (Check(tail[0], tail[1], head[0], head[1], c))
+                        {
+                            tail[0] = last.Peek()[0];
+                            tail[1] = last.Peek()[1];
+                            if (CheckItem(positions, tail))
+                            {
+                                positions.Add(new List<int>() { tail[0], tail[1] });
+                                last.Dequeue();
+                            }
+                        }
+                        break;
+                    case "U":
+
+
+                        last.Enqueue(new List<int>() { head[0], head[1] });
+
+
+                        head[0] += 1;
+                        if (Check(tail[0], tail[1], head[0], head[1], c))
+                        {
+                            tail[0] = last.Peek()[0];
+                            tail[1] = last.Peek()[1];
+                            if (CheckItem(positions, tail))
+                            {
+                                positions.Add(new List<int>() { tail[0], tail[1] });
+                                last.Dequeue();
+                            }
+                        }
+                        break;
+                    case "D":
+
+                        last.Enqueue(new List<int>() { head[0], head[1] });
+
+
+                        head[0] -= 1;
+                        if (Check(tail[0], tail[1], head[0], head[1], c))
+                        {
+                            tail[0] = last.Peek()[0];
+                            tail[1] = last.Peek()[1];
+                            if (CheckItem(positions, tail))
+                            {
+                                positions.Add(new List<int>() { tail[0], tail[1] });
+                                last.Dequeue();
+                            }
+                        }
+                        break;
+                    default:
+                        break;
+                }
+            }
+        }
+        result = positions.Distinct().ToList();
+        //Console.WriteLine("a");
+        return result.Count;
+    }
 }
