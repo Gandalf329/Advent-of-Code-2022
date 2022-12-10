@@ -8,3 +8,5 @@ Days:
 * [Day 06: Tuning Trouble](https://github.com/Gandalf329/Advent-of-Code-2022/blob/master/Days/06_Tuning_Trouble.cs)
 * [Day 07: No Space Left On Device](https://github.com/Gandalf329/Advent-of-Code-2022/blob/master/Days/07_No_Space_Left_On_Device.cs)
 * [Day 08: Treetop Tree House](https://github.com/Gandalf329/Advent-of-Code-2022/blob/master/Days/08_Treetop_Tree_House.cs)
+* [Day 09: Rope Bridge(1star)](https://github.com/Gandalf329/Advent-of-Code-2022/blob/master/Days/09_Rope_Bridge.cs)
+* [Day 10: Cathode-Ray Tube](https://github.com/Gandalf329/Advent-of-Code-2022/blob/master/Days/10_Cathode_Ray_Tube.cs)
