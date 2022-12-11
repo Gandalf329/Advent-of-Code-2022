@@ -68,7 +68,7 @@ internal class _10_Cathode_Ray_Tube
     }
     public bool CheckSprite(int sprite, int index)
     {
-        if (sprite -1 == index || sprite == index || sprite + 1 == index)
+        if (sprite - 1 == index || sprite == index || sprite + 1 == index)
         {
             return true;
         }
@@ -104,13 +104,13 @@ internal class _10_Cathode_Ray_Tube
         int j = 0;
         foreach (string item in data)
         {
-            
+
             if (item == "noop")
             {
                 loop += 1;
                 i = loop / 40;
                 j = loop % 40;
-                if (CheckSprite(startSprite, loop%40))
+                if (CheckSprite(startSprite, loop % 40))
                 {
                     monitor[i][j] = "#";
                 }
