@@ -10,3 +10,4 @@ Days:
 * [Day 08: Treetop Tree House](https://github.com/Gandalf329/Advent-of-Code-2022/blob/master/Days/08_Treetop_Tree_House.cs)
 * [Day 09: Rope Bridge(1star)](https://github.com/Gandalf329/Advent-of-Code-2022/blob/master/Days/09_Rope_Bridge.cs)
 * [Day 10: Cathode-Ray Tube](https://github.com/Gandalf329/Advent-of-Code-2022/blob/master/Days/10_Cathode_Ray_Tube.cs)
+* [Day 11: Monkey in the Middle](https://github.com/Gandalf329/Advent-of-Code-2022/blob/master/Days/11_Monkey_in_the_Middle.cs)
