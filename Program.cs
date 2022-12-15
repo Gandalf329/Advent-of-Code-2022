@@ -1,4 +1,5 @@
-﻿using Advent_of_Code_2022.Days;
+﻿using System;
+using Advent_of_Code_2022.Days;
 namespace Advent_of_Code_2022;
 
 internal class Program
@@ -16,6 +17,7 @@ internal class Program
         var day9 = new _09_Rope_Bridge();
         var day10 = new _10_Cathode_Ray_Tube();
         var day11 = new _11_Monkey_in_the_Middle();
+        var day15 = new _15_Beacon_Exclusion_Zone();
         
         day1.GetData();
         day2.GetData();
@@ -28,6 +30,7 @@ internal class Program
         day9.GetData();
         day10.GetData();
         day11.GetData();
+        day15.GetData();
 
         Console.WriteLine("Advent of code 2022!");
         Console.WriteLine($"Day 1. Result 1: {day1.Result1()} \t Result 2: {day1.Result2()}");
@@ -41,6 +44,7 @@ internal class Program
         Console.WriteLine($"Day 9. Result 1: {day9.Result1()} \t Result 2(not working): {day9.Result2()}");
         Console.WriteLine($"Day 10. Result 1: {day10.Result1()} \nDay10. Result 2: RKPJBPLA \n");
         day10.Result2();
-        Console.WriteLine($"Day 11. Result 1: {day11.Result1()} \t Result 2: {day8.Result2()}");
+        Console.WriteLine($"Day 11. Result 1: {day11.Result1()} \t Result 2: {day11.Result2()}");
+        Console.WriteLine($"Day 15. Result 1: {day15.Result1()} \t Result 2: {day15.Result2()}");
     }
 }
